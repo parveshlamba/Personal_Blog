@@ -1,0 +1,430 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    
+}
+#main{
+    width:100%;
+    height:100%;
+    /* background: Linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%); */
+    background: linear-gradient(245.59deg, #d8c5f4 ,  #4b1f7e);
+    
+}
+#nav{
+       display: flex;
+       justify-content: space-between;padding: 20px;
+       text-transform: capitalize;   
+       color: white;    
+       font-weight: 200;
+       font-family: Roboto;
+    
+
+
+
+}
+#navright{
+
+    display: flex;
+    gap: 180px;
+    padding-right: 20px;
+    font-weight: 200;
+    font-size: 18px;
+
+   
+     
+    
+     }
+     #rexop{
+        
+        height: 80%;
+        width: 75%;
+        background-color: aliceblue;
+       margin-top: 60px;
+       margin-left: 160px;
+       border-radius: 10%;
+       border-color: #FFF;
+       border-width: 10px;
+       border-style: solid;
+       background-color: rgb(4, 75,97);
+       /* overflow: hidden; */
+    
+    
+
+    
+
+
+    
+    
+
+}
+#rexop h1{
+    padding-left: 40%;
+    padding-top: 15px;
+    font-family: 'kg broken vessels sketch';
+    color: #FFF;
+    text-transform: uppercase;
+}
+    
+
+        
+    
+
+    #rexop h2{
+        padding-left: 15px;
+        padding-top: 10px;
+        font-family: kg broken vessels sketch;
+        color: #FFF;
+        font-weight: 300;
+        font-size:50px ;
+    }
+
+
+    #rexop h3{
+        color: #6efced;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+    #rexop h4{
+        color: #fa1d0a;
+        font-size: 30px;
+        text-transform: capitalize;
+        
+
+    }
+    #rexop h5{
+        color:gold;
+        font-size: 30px;
+        text-transform: capitalize;
+
+
+    }
+    #rexop h6{
+
+        color: chocolate;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    #rexop ul{
+
+        padding-top: 40px;
+    }
+   
+        
+
+
+ #navright a{
+
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+}
+#navright a::after{
+  position: absolute;
+  /* background-color: blue; */
+  height: 2px;
+  width: 100%;
+  content: "";
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  background-color: white;
+}
+#navright a:hover::after{
+
+  opacity: 1;
+  transform-origin: center;
+  transform: translate3d(0, 0.2em, 0);
+}
+#title{
+    font-size: 20px;
+    display: flex;
+gap: 5px;
+   
+}
+
+#title h3{
+
+    
+    
+        font-size: 20  px;
+        background: linear-gradient(120deg, var(#6efced), var(#fa1d0a));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+    
+      }
+
+      #circle{
+        display: flex;
+        gap: 2px;
+        margin-right: 10px;
+      }
+
+
+      #c1{
+
+        width: 20px;
+        height: 20px;
+        /* background-color: aliceblue; */
+         border: 2px solid aliceblue; 
+        border-radius: 50%;
+        background-color: #6efced;
+        animation: circle   3s linear  infinite;
+        animation-delay: 2s;
+
+
+    }
+    @keyframes circle { 
+
+      0%{   background-color: #6efced;
+
+      }
+      50%{
+            background-color:  #fa1d0a;
+      }
+      100%{
+        background-color: white;
+      }
+      
+    }
+
+   
+      
+    #c2{
+
+        width: 20px;
+        height: 20px;
+        background-color: aliceblue;
+        border: 2px solid aliceblue;
+        border-radius: 50%;
+        animation: circle2 3s linear infinite ;
+        animation-delay: 2s;
+    }
+    @keyframes circle2 { 
+      0%{ background-color: white;
+
+      }
+      50%{
+        background-color:#6efced ;
+      }
+      100%{
+        background-color: #fa1d0a;
+      }
+    }
+
+    
+
+
+    #c3{
+
+        width: 20px;
+        height: 20px;
+        /* background-color: aliceblue; */
+        border: 2px solid aliceblue;
+        border-radius: 50%;
+        background-color: #fa1d0a;
+        animation: circle3 3s linear infinite;
+        animation-delay: 2s;
+
+    }
+    @keyframes circle3 {
+       
+      0%{
+        background-color: #fa1d0a;
+      }
+      50%{
+        background-color: white;
+      }
+      100%{
+        background-color: #6efced;
+      }
+    }
+      
+     #section{
+        
+        height: 100%;
+    width: 100%;
+    background: linear-gradient(245.59deg, #d8c5f4 ,  #4b1f7e);
+
+
+     }
+     #section1{
+       display: flex;
+       width: 100%;
+       height: 50%;
+       justify-content: space-evenly;
+       padding-right: 30px;
+       text-transform: capitalize;
+     }
+
+     #q1{
+        height: 80%;
+        width: 75%;
+        background-color: aliceblue;
+       margin-top: 60px;
+       margin-left: 160px;
+       border-radius: 10%;
+       border-color: #FFF;
+       border-width: 10px;
+       border-style: solid;
+       background-color: #6efced;
+       /* overflow: hidden; */
+
+       
+    
+    
+
+     }
+     #q1 h1{
+        
+        padding-left: 30.5%;
+        font-size: 70px;
+        text-decoration: underline;
+        color: white;
+     }
+     #q1 p{
+        font-size: 40px;
+        color:white
+     }
+     #q2{
+        height: 80%;
+        width: 75%;
+        background-color: aliceblue;
+       margin-top: 60px;
+       margin-left: 160px;
+       border-radius: 10%;
+       border-color: #FFF;
+       border-width: 10px;
+       border-style: solid;
+       background-color: #fa1d0a;
+       /* overflow: hidden; */
+     }
+     #q2 h1{
+        padding-left: 30.5%;
+        font-size: 70px;
+        text-decoration: underline;
+        color: white;
+     }
+     #q2 li{
+        font-size: 40px;
+        color:white;
+        margin: 10px;
+     }
+     #section2{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: space-evenly;
+        padding-right: 30px;
+        text-transform: capitalize
+      }
+ 
+      #q3{
+         height: 80%;
+         width: 75%;
+         background-color: aliceblue;
+        margin-top: 60px;
+        margin-left: 160px;
+        border-radius: 10%;
+        border-color: #FFF;
+        border-width: 10px;
+        border-style: solid;
+        background-color: gold;
+        /* overflow: hidden; */
+ 
+        
+     
+     
+ 
+      }
+      #q3 h1{
+ 
+         padding-left: 30.5%;
+         font-size: 70px;
+         text-decoration: underline;
+         color: white;
+      }
+      #q3 li{
+        font-size: 40px;
+        color:white;
+        margin: 10px;}
+      #q3 p{
+         font-size: 40px;
+         color:white
+      }
+      #q4{
+         height: 80%;
+         width: 75%;
+         background-color: aliceblue;
+        margin-top: 60px;
+        margin-left: 160px;
+        border-radius: 10%;
+        border-color: #FFF;
+        border-width: 10px;
+        border-style: solid;
+        background-color: chocolate;
+        /* overflow: hidden; */
+      }
+      #q4 h1{
+         padding-left: 30.5%;
+         font-size: 70px;
+         text-decoration: underline;
+         color: white;
+      }
+      #q4 li{
+        font-size: 40px;
+        color:white;
+        margin: 10px;}
+
+
+
+        #q1 a{
+
+          text-decoration: none;
+          font-size: 40px;
+          color:#FFF;
+          
+          
+
+            
+        }
+        #q1 a{
+
+          text-decoration: none;
+          color: white;
+          position: relative;
+        
+        }
+        #q1 a::after{
+          position: absolute;
+          /* background-color: blue; */
+          height: 2px;
+          width: 100%;
+          content: "";
+          left: 0;
+          bottom: 0;
+          opacity: 0;
+          transition: opacity 300ms, transform 300ms;
+          background-color: white;
+        }
+        #q1 a:hover::after{
+        
+          opacity: 1;
+          transform-origin: center;
+          transform: translate3d(0, 0.2em, 0);
+        }
+     
+
+
+
+

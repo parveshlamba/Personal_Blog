@@ -1,0 +1,417 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#main{
+    width:100%;
+    height:100%;
+    background: Linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    
+}
+#nav{
+       display: flex;
+       justify-content: space-between;padding: 20px;
+       text-transform: capitalize;   
+       color: white;    
+       font-weight: 200;
+       font-family: Roboto;
+    
+
+
+
+}
+#navright {
+
+    display: flex;
+    gap: 130px;
+    padding-right: 20px;
+    font-weight: 200;
+    font-size: 18px;
+    font-family: Roboto;
+    
+    
+
+    
+
+
+    
+    
+
+}
+#navright h4{
+  display: none;
+}
+
+
+
+ #navright a{
+
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+}
+#navright a::after{
+  position: absolute;
+  /* background-color: blue; */
+  height: 2px;
+  width: 100%;
+  content: "";
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  background-color: white;
+}
+#navright a:hover::after{
+
+  opacity: 1;
+  transform-origin: center;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+
+
+
+
+
+
+    
+
+
+#title{
+    font-size: 20px;
+    display: flex;
+gap: 5px;
+   
+}      
+
+      #circle{
+        display: flex;
+        gap: 2px;
+        margin-right: 10px;
+      }
+
+
+      #c1{
+
+        width: 20px;
+        height: 20px;
+        /* background-color: aliceblue; */
+         border: 2px solid aliceblue; 
+        border-radius: 50%;
+        background-color: #6efced;
+        animation: circle   3s linear  infinite;
+        animation-delay: 2s;
+
+
+    }
+    @keyframes circle { 
+
+      0%{   background-color: #6efced;
+
+      }
+      50%{
+            background-color:  #fa1d0a;
+      }
+      100%{
+        background-color: white;
+      }
+      
+    }
+
+   
+      
+    #c2{
+
+        width: 20px;
+        height: 20px;
+        background-color: aliceblue;
+        border: 2px solid aliceblue;
+        border-radius: 50%;
+        animation: circle2 3s linear infinite ;
+        animation-delay: 2s;
+    }
+    @keyframes circle2 { 
+      0%{ background-color: white;
+
+      }
+      50%{
+        background-color:#6efced ;
+      }
+      100%{
+        background-color: #fa1d0a;
+      }
+    }
+
+    
+
+
+    #c3{
+
+        width: 20px;
+        height: 20px;
+        /* background-color: aliceblue; */
+        border: 2px solid aliceblue;
+        border-radius: 50%;
+        background-color: #fa1d0a;
+        animation: circle3 3s linear infinite;
+        animation-delay: 2s;
+
+    }
+    @keyframes circle3 {
+       
+      0%{
+        background-color: #fa1d0a;
+      }
+      50%{
+        background-color: white;
+      }
+      100%{
+        background-color: #6efced;
+      }
+
+      
+    }
+    #total{
+        display: flex;
+        justify-content: space-around;
+        align-items: centre;
+        margin: 50px;
+        
+    }
+    #section h1{
+
+        font-size: 80px;
+        text-transform: capitalize;
+        color: white;
+        font-family: Roboto;
+        padding: 80px;
+        padding-left: 150px;
+
+
+
+    }
+    
+#section span{
+
+    font-size: 120px;
+    
+
+    
+}
+#logo img{
+    
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 150px;
+    background-color: #fff;
+  box-shadow:
+  background-color: #fff;
+  box-shadow:
+    0 0 30px 15px #fff,  
+    0 0 33px 20px  #4d9559,  
+    0 0 60px 40px #0ff;  animation: zoom-in-zoom-out 2s linear infinite;}
+  
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.05, 1.05);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+    #total{
+   
+        
+         border: none;
+         outline: none;
+         color: #fff;
+         cursor: pointer;
+         position: relative;
+         z-index: 0;
+         border-radius: 12px;
+
+       }
+      #total::after {
+         content: "";
+         z-index: -1;
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color:  #133917;
+         left: 0;
+         top: 0;
+         border-radius: 10px;
+       }
+       
+        #total::before { 
+         content: "";
+         background: linear-gradient(
+           45deg,
+           #4d9559 ,  #38703d
+            
+         );
+         position: absolute;
+         top: -2px;
+         left: -2px;
+         background-size: 600%;
+         z-index: -1;
+         width: calc(100% + 4px);
+         height:  calc(100% + 4px);
+         filter: blur(8px);
+         animation: glowing 20s linear infinite;
+         transition: opacity .1s ;
+         
+         opacity: 1;
+       }
+       
+       @keyframes glowing {
+         0% {background-position: 0 0;}
+         50% {background-position: 400% 0;}
+         100% {background-position: 0 0;}
+       }
+       
+       
+       #total:hover::before {
+         opacity: 1;
+       }
+       
+       #total:active:after {
+         background: transparent;
+       }
+       
+       #total:active {
+         color:  #133917;
+         font-weight: bold;
+       }
+
+       #icon{
+        display: flex;
+        margin-top: 25px;
+        margin-left: 75px;
+        gap: 4px;
+        text-decoration: none;
+
+        
+
+        
+        
+       }
+
+
+       #icon i{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+        
+
+        
+       }
+
+
+  @media (max-width:600px) {
+
+    #circle{
+      display: flex;
+      gap: 1px;
+      
+    }
+
+
+    #c1{
+
+      width: 15px;
+      height: 15px;
+      /* background-color: aliceblue; */
+       border: 1px solid aliceblue; 
+      border-radius: 50%;
+      background-color: #6efced;
+      animation: circle   3s linear  infinite;
+      animation-delay: 2s;
+
+
+  }
+  #c2{
+
+    width: 15px;
+    height: 15px;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    animation: circle2 3s linear infinite ;
+    animation-delay: 2s;
+}
+#c3{
+
+  width: 15px;
+  height: 15px;
+  /* background-color: aliceblue; */
+  border: 1px solid aliceblue;
+  border-radius: 50%;
+  background-color: #fa1d0a;
+  animation: circle3 3s linear infinite;
+  animation-delay: 2s;}
+
+
+  #navright{
+
+    display: flex;
+    
+    
+    font-weight: 200;
+    font-size: 18px;
+    display: none;
+    
+  }
+   h4{
+    display:initial;
+  }
+
+
+  }
+  
+
+
+
+
+       
+
+       
+
+
+    
+
+
+
+        
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+    
+
+
+ 

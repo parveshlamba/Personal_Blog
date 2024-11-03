@@ -1,0 +1,151 @@
+*{
+margin:0%;
+padding:0%;
+font-family: 'gilroy';
+box-sizing:border-box;
+
+
+}
+html,body{
+    height: 100%;
+    width:100%;
+
+}
+#main{
+       height:100% ;
+       width:100% ;
+
+
+}
+#nav{
+background-color: brown;  
+width:100%;
+height:100px;
+
+align-items: center;
+
+
+}
+#nav2{
+       display:flex;
+       align-items: center;
+       justify-content: flex-end;
+        gap:20px;
+       padding: 5px;
+       padding-bottom: 20px;
+       padding-right: 15px;
+
+
+}
+
+#nav1{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2px;
+        padding-top: 45px;
+        padding-left: 25px;
+        
+
+
+
+}
+.gola{
+       height: 22px;
+       width: 22px;
+       background-color: black;
+       border-radius: 50%;
+
+}
+#nav2 h4{
+           font-size: 17px;
+           font-weight: 600;
+           
+
+
+}
+#nav2 h4 span{
+       opacity:10%;
+}
+#navb{
+       width: 100%;
+       height:50px;
+       /* background-color: beige; */
+       display: flex;
+       gap: 70px;
+       padding-left: 50px;
+       align-items: center;
+       justify-content: flex-start;
+}
+#navb{
+       font-size: 18px;
+       font-weight: 300;
+       text-transform: uppercase;
+}
+#content{
+       height: calc(100% - 150px);
+       width: 100%;
+       /* background-color: aqua; */
+}
+#textcontent{
+       height: 40%;
+       width: 100%;
+       /* background-color:burlywood ; */
+       display: flex;
+       
+       
+        
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       
+}
+#textcontent::-webkit-scrollbar{
+   background-color: transparent;
+   height: 7px;
+   
+
+}
+#textcontent::-webkit-scrollbar-thumb{
+       background-color: orangered;
+}
+.elem{
+       flex-shrink: 0;
+       height:100%;
+       width:50%;
+       /* background-color: red; */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+}
+.elem h1{
+       font-size: 130px;
+       font-weight: 300;
+
+
+}
+#imagecontent{
+       height:60%;
+       width: 100%;
+       display:flex;
+       
+       overflow-x: auto;
+       
+
+
+
+
+}
+
+#imagecontent img{
+       flex-shrink:0;
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+
+}
+
+
+
+
+
